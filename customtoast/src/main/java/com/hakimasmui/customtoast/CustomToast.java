@@ -36,7 +36,7 @@ public class CustomToast {
         View v = inflater.inflate(R.layout.custom_toast, activity.findViewById(R.id.custom_toast_container), true);
         LinearLayout backgorund = v.findViewById(R.id.back);
         TextView textView = v.findViewById(R.id.text);
-        backgorund.setBackgroundColor(color);
+        backgorund.setBackgroundColor(activity.getResources().getColor(color));
         textView.setText(kata);
         Toast toast = new Toast(activity.getApplicationContext());
         toast.setGravity(posisi | Gravity.FILL_HORIZONTAL, 0, 0);
@@ -50,7 +50,7 @@ public class CustomToast {
         View v = inflater.inflate(R.layout.custom_toast, activity.findViewById(R.id.custom_toast_container), true);
         LinearLayout backgorund = v.findViewById(R.id.back);
         TextView textView = v.findViewById(R.id.text);
-        backgorund.setBackgroundColor(bg_color);
+        backgorund.setBackgroundColor(activity.getResources().getColor(bg_color));
         textView.setText(kata);
         Toast toast = new Toast(activity.getApplicationContext());
         toast.setGravity(posisi | Gravity.FILL_HORIZONTAL, 0, 0);
@@ -64,7 +64,7 @@ public class CustomToast {
         View v = inflater.inflate(R.layout.custom_toast, activity.findViewById(R.id.custom_toast_container), true);
         LinearLayout backgorund = v.findViewById(R.id.back);
         TextView textView = v.findViewById(R.id.text);
-        backgorund.setBackgroundColor(bg_color);
+        backgorund.setBackgroundColor(activity.getResources().getColor(bg_color));
         textView.setText(kata);
         Toast toast = new Toast(activity.getApplicationContext());
         toast.setGravity(posisi | Gravity.FILL_HORIZONTAL, 0, 0);
