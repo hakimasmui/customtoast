@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="coba text"
             android:textAlignment="center"
-            android:textColor="#d1d2d3"
+            android:textColor="#FFFFFF"
             android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
